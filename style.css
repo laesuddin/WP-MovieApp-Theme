@@ -1,0 +1,94 @@
+/*
+Theme Name: Movie Theme
+Theme URI: https://yourwebsite.com
+Author: Laes Uddin
+Author URI: https://yourwebsite.com
+Description: A custom theme to display movies using the TMDB API
+Version: 1.0
+Text Domain: movie-theme
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.movie-item {
+    background-color: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.movie-item h2 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.movie-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.movie-item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination a, .pagination span {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #12959b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #0d787a;
+}
+
+.pagination .current {
+    background-color: #0d787a;
+    pointer-events: none;
+}
